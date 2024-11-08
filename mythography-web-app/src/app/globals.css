@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import Fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
-
 /************ Color Variables ************/
 :root {
     /* Primary Colors */
@@ -56,9 +51,19 @@
     --success-dark-hover: #00660F;
 }
 
+body, html {
+    font-family: Inter, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
 /************ Text Styles ************/
 
 /* Font sizes */
+.m-text-xxxl {
+    font-size: 64px;
+}
+
 .m-text-xxl {
     font-size: 40px;
 }
@@ -83,11 +88,11 @@
 
 /* Fonts */
 .serif {
-    font-family: 'Garamond', serif;
+    font-family: Garamond, serif;
 }
 
 .sans {
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
 }
 
 /* Font Weights */
@@ -135,7 +140,7 @@
     padding: 8px 12px;
 }
 .btn-lg {
-    padding: 16px 124px;
+    padding: 16px 14px;
 }
 .btn-icon {
     padding: 12px 12px;
@@ -250,7 +255,6 @@
 .dark-btn-text:hover {
     background-color: var(--gray-800);
 }
-
 
 /*********** Input Styles ************/
 .input-text {
