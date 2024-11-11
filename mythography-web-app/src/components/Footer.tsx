@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Footer = () => {
     return (
-        <footer className="bg-black flex justify-between p-6">
+        <footer className="bg-black flex justify-between py-8 px-16">
             <div className="flex flex-col gap-8">
                 <div className="flex gap-8 items-center">
                     <Image src="/logos/mythography/mythography-dark.svg" alt="" width="92" height="92"></Image>

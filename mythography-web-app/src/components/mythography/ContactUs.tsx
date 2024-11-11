@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import ProductsCarouselBar from "@/components/mythography/ProductsCarouselBar";
 import Image from "next/image";
 
-const OurProducts = () => {
+const ContactUs = () => {
     var products = [
         {title: 'Argus', detailedDescription: 'Argus is your vigilant guardian for application health, designed to monitor every corner of your system with precision and reliability. From real-time performance tracking to detailed insights into app stability, Argus ensures you’re always one step ahead of potential issues, helping you maintain a high standard of quality and uptime.', logo: '/logos/argus/argus-outline-dark.svg', activeLogo: '/logos/argus/argus-outline.svg', image: '/images/argus.png'},
         {title: 'Balor', detailedDescription: 'Balor is a powerful tool for threat detection, inspired by the sharp perception of its mythological namesake. With Balor, you gain an extra set of eyes that continuously scans for vulnerabilities, identifies suspicious activity, and keeps your application secure. Alerts are sent through customizable channels, giving you immediate insights when potential threats arise.', logo: '/logos/balor/balor-outline-dark.svg', activeLogo: '/logos/balor/balor-outline.svg', image: '/images/argus.png'},
@@ -54,4 +54,4 @@ const OurProducts = () => {
     );
 };
 
-export default OurProducts;
+export default ContactUs;

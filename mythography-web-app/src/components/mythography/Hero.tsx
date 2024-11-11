@@ -16,8 +16,8 @@ const Hero = () => {
     return (
         <div className="w-[100vw] h-[94vh] flex items-center">
             <div className="fixed top-8 right-16 flex gap-8 items-center">
-                <button className="btn btn-tertiary-fill">Try Mythography</button>
-                <button className="btn btn-tertiary-outline">Contact Us</button>
+                <button className="btn btn-tertiary-light-fill">Try Mythography</button>
+                <button className="btn btn-tertiary-light-outline">Contact Us</button>
             </div>
             <div className="flex justify-around items-center w-[100%]">
                 <div className="flex flex-col gap-32">

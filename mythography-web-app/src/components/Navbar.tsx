@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
     return (
         <nav className="fixed top-0 left-0">
             <div
-                className={`bg-gray-900 p-6 rounded-br-[35px] h-32 flex items-center ${isOpen ? 'justify-between' : 'justify-center'} transition-[width] duration-300 ease-in-out ${
+                className={`bg-gray-800 p-6 rounded-br-[35px] h-32 flex items-center ${isOpen ? 'justify-between' : 'justify-center'} transition-[width] duration-300 ease-in-out ${
                     isOpen ? 'w-[600px]' : 'w-32'
                 }`}
                 onClick={toggleMenu}

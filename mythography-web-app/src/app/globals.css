@@ -161,6 +161,10 @@ body, html {
     background-color: black;
     color: white;
 }
+.btn-tertiary-light-fill {
+    background-color: var(--gray-800);
+    color: white;
+}
 
 .btn-secondary-outline {
     background-color: transparent;
@@ -171,6 +175,11 @@ body, html {
     background-color: transparent;
     color: black;
     border: 1px solid black;
+}
+.btn-tertiary-light-outline {
+    background-color: transparent;
+    color: var(--gray-600);
+    border: 1px solid var(--gray-600);
 }
 
 .btn-secondary-text {
@@ -189,12 +198,19 @@ body, html {
 .btn-tertiary-fill:hover {
     background-color: var(--gray-800);
 }
+.btn-tertiary-light-fill:hover {
+    background-color: var(--gray-600);
+}
 
 .btn-secondary-outline:hover {
     background-color: var(--gray-200);
 }
 .btn-tertiary-outline:hover {
     background-color: var(--gray-200);
+}
+.btn-tertiary-light-outline:hover {
+    background-color: var(--gray-200);
+    color: var(--gray-800);
 }
 
 .btn-secondary-text:hover {
