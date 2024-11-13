@@ -19,10 +19,10 @@ const OurProducts = () => {
     }
 
     return (
-        <div className="p-12 pb-32 flex flex-col gap-12 items-center">
+        <div className="p-6 sm:p-8 md:p-10 lg:p-12 pb-32 flex flex-col gap-12 items-center">
             <ProductsCarouselBar showProduct={showProduct} products={products} />
-            <div className="flex max-w-[1600px] flex-col md:flex-row md:items-start gap-8 md:gap-16 justify-center md:w-full">
-                <div className="w-full md:w-1/2 rounded-xl">
+            <div className="flex max-w-[1600px] flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16 justify-center lg:w-full">
+                <div className="w-full lg:w-1/2 rounded-xl">
                     <Image
                         src={selectedProduct.image}
                         alt={selectedProduct.title}
@@ -32,7 +32,7 @@ const OurProducts = () => {
                         className="object-cover rounded-xl"
                     />
                 </div>
-                <div className="flex flex-col gap-8 w-full md:w-1/2">
+                <div className="flex flex-col text-center lg:text-start gap-8 w-full lg:w-1/2">
                     <h3 className="m-text-xxl m-text-bold serif">
                         {selectedProduct.title}
                     </h3>
@@ -47,7 +47,7 @@ const OurProducts = () => {
                         }}
                     ></div>
                     <p>{selectedProduct.detailedDescription}</p>
-                    <button className="btn btn-tertiary-fill max-w-[200px]">Explore {selectedProduct.title}</button>
+                    <button className="btn btn-tertiary-fill self-center lg:self-start max-w-[200px]">Explore {selectedProduct.title}</button>
                 </div>
             </div>
         </div>

@@ -5,27 +5,13 @@ import ProductsCarouselBar from "@/components/mythography/ProductsCarouselBar";
 import Image from "next/image";
 
 const MeetTheCreator = () => {
-    var products = [
-        {title: 'Argus', detailedDescription: 'Argus is your vigilant guardian for application health, designed to monitor every corner of your system with precision and reliability. From real-time performance tracking to detailed insights into app stability, Argus ensures you’re always one step ahead of potential issues, helping you maintain a high standard of quality and uptime.', logo: '/logos/argus/argus-outline-dark.svg', activeLogo: '/logos/argus/argus-outline.svg', image: '/images/argus.png'},
-        {title: 'Balor', detailedDescription: 'Balor is a powerful tool for threat detection, inspired by the sharp perception of its mythological namesake. With Balor, you gain an extra set of eyes that continuously scans for vulnerabilities, identifies suspicious activity, and keeps your application secure. Alerts are sent through customizable channels, giving you immediate insights when potential threats arise.', logo: '/logos/balor/balor-outline-dark.svg', activeLogo: '/logos/balor/balor-outline.svg', image: '/images/argus.png'},
-        {title: 'Briareus', detailedDescription: 'Briareus helps you understand your users’ experience through advanced analytics. Like its mythological counterpart with a hundred hands, Briareus captures every interaction across your interface, offering heatmaps, session replays, and click maps to reveal user behavior patterns. With this knowledge, you can make data-driven adjustments to optimize your app’s design and improve user engagement.', logo: '/logos/briareus/briareus-outline-dark.svg', activeLogo: '/logos/briareus/briareus-outline.svg', image: '/images/argus.png'},
-        {title: 'Fafnir', detailedDescription: 'Fafnir is your solution for comprehensive encryption, guarding sensitive data with strength and flexibility. Whether protecting data at rest or in transit, Fafnir offers configurable encryption protocols that adapt to your needs, giving you peace of mind knowing your application’s data is secure and compliant with modern standards.', logo: '/logos/fafnir/fafnir-outline-dark.svg', activeLogo: '/logos/fafnir/fafnir-outline.svg', image: '/images/argus.png'},
-    ]
-    // Using useState to manage the current selected product
-    const [selectedProduct, setSelectedProduct] = useState(products[0]);
-
-    function showProduct(product) {
-        setSelectedProduct(product);
-    }
-
     return (
-        <div className="p-12 pb-32 flex flex-col gap-12 items-center">
-            <ProductsCarouselBar showProduct={showProduct} products={products} />
+        <div className="p-12 pb-32 flex justify-center">
             <div className="flex max-w-[1600px] flex-col md:flex-row md:items-start gap-8 md:gap-16 justify-center md:w-full">
                 <div className="w-full md:w-1/2 rounded-xl">
                     <Image
-                        src={selectedProduct.image}
-                        alt={selectedProduct.title}
+                        src="/images/justice.png"
+                        alt="Justice Gooch"
                         layout="responsive"
                         width={100}
                         height={100}
@@ -34,7 +20,7 @@ const MeetTheCreator = () => {
                 </div>
                 <div className="flex flex-col gap-8 w-full md:w-1/2">
                     <h3 className="m-text-xxl m-text-bold serif">
-                        {selectedProduct.title}
+                        Hi, I'm Justice
                     </h3>
                     <div
                         className="repeating-svg bg-[url('/icons/divider-box.svg')]"
@@ -46,8 +32,15 @@ const MeetTheCreator = () => {
                             height: "14px",
                         }}
                     ></div>
-                    <p>{selectedProduct.detailedDescription}</p>
-                    <button className="btn btn-tertiary-fill max-w-[200px]">Explore {selectedProduct.title}</button>
+                    <p>I created Mythography with a simple mission: to make developer tools that are as inspiring as they are useful. As I have spent more time in the tech industry learning about both development and UX, I hace seen the need for tools that are not only powerful but also designed to fit seamlessly into a developer’s workflow. Inspired by the timeless symbols of vigilance, security, and insight, Mythography embodies the values I believe all great software should offer—strength, adaptability, and simplicity. My goal is for every tool I create to give developers the freedom to build confidently.  Thanks for visiting this site, and I hope you will give the Mythography Suite a try!</p>
+                    <div className="flex gap-4 items-center">
+                        <a className="no-underline" href="https://www.linkedin.com/in/justicegooch/" target="_blank">
+                            <Image src="/icons/linkedin.svg" alt="LinkedIn" width="48" height="48"></Image>
+                        </a>
+                        <a className="no-underline" href="https://github.com/Jugooch/" target="_blank">
+                            <Image src="/icons/github.svg" alt="LinkedIn" width="48" height="48"></Image>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

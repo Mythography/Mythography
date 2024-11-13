@@ -63,7 +63,6 @@ body, html {
 .m-text-xxxl {
     font-size: 64px;
 }
-
 .m-text-xxl {
     font-size: 40px;
 }
@@ -84,6 +83,33 @@ body, html {
 }
 .m-text-xxs {
     font-size: 12px;
+}
+/* Responsive Font Sizes */
+@media (min-width: 640px) {
+    m-text-xxxl {
+        font-size: 48px;
+    }
+}
+@media (min-width: 768px) {
+    m-text-xxxl {
+        font-size: 52px;
+    }
+    m-text-xxl {
+        font-size: 24px;
+    }
+    m-text-md {
+        font-size: 18px;
+    }
+}
+@media (min-width: 894px) {
+    m-text-xxxl {
+        font-size: 56px;
+    }
+}
+@media (min-width: 1022px) {
+    m-text-xxxl {
+        font-size: 60px;
+    }
 }
 
 /* Fonts */

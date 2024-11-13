@@ -14,35 +14,60 @@ const Hero = () => {
     ]
 
     return (
-        <div className="w-[100vw] h-[94vh] flex items-center">
-            <div className="fixed top-8 right-16 flex gap-8 items-center">
-                <button className="btn btn-tertiary-light-fill">Try Mythography</button>
-                <button className="btn btn-tertiary-light-outline">Contact Us</button>
+        <div>
+            <div className="w-[100vw] h-[94vh] p-12 hidden lg:flex items-center gap-6">
+                <div className="flex justify-around items-center w-[100%]">
+                    <div className="flex flex-col gap-32 xl:gap-16 lg:gap-12 md:gap-8">
+                        <HeroProductCard title={products[0].title} description={products[0].description}
+                                         logo={products[0].logo}></HeroProductCard>
+                        <HeroProductCard title={products[1].title} description={products[1].description}
+                                         logo={products[1].logo}></HeroProductCard>
+                    </div>
+                </div>
+                <div className="flex flex-col gap-8 items-center text-center">
+                    <div className="flex flex-col items-center text-center">
+                        <Image src="/logos/mythography/mythography.svg" alt="" width="140" height="140" className="w-24 lg:w-40"></Image>
+                        <h1 className="m-text-xxxl text-black m-text-bold serif">Mythography</h1>
+                        <h1 className="m-text-lg">Application Support Suite</h1>
+                    </div>
+                    <div className="h-0.5 w-full bg-gray-200"></div>
+                    <p>Giant Solutions to complex problems. The Mythography Application Support Suite provides a modular
+                        set of tools that will allow your application to perform at 100% of its potential</p>
+                    <div className="flex gap-8 items-center">
+                        <button className="btn btn-tertiary-fill">Try Mythography</button>
+                        <button className="btn btn-tertiary-outline">Contact Us</button>
+                    </div>
+                </div>
+                <div className="flex justify-around items-center w-[100%]">
+                    <div className="flex flex-col gap-32 xl:gap-16 lg:gap-12 md:gap-8">
+                        <HeroProductCard title={products[2].title} description={products[2].description}
+                                         logo={products[2].logo}></HeroProductCard>
+                        <HeroProductCard title={products[3].title} description={products[3].description}
+                                         logo={products[3].logo}></HeroProductCard>
+                    </div>
+                </div>
             </div>
-            <div className="flex justify-around items-center w-[100%]">
-                <div className="flex flex-col gap-32">
+            <div className="w-[100vw] p-12 pb-32 flex gap-12 flex-col lg:hidden items-center">
+                <div className="flex flex-col gap-8 items-center text-center">
+                    <div className="flex flex-col items-center text-center">
+                        <Image src="/logos/mythography/mythography.svg" alt="" width="140" height="140"></Image>
+                        <h1 className="m-text-xxxl text-black m-text-bold serif">Mythography</h1>
+                        <h1 className="m-text-lg">Application Support Suite</h1>
+                    </div>
+                    <div className="h-0.5 w-full bg-gray-200"></div>
+                    <p>Giant Solutions to complex problems. The Mythography Application Support Suite provides a
+                        modular
+                        set of tools that will allow your application to perform at 100% of its potential</p>
+                    <div className="flex gap-8 items-center">
+                        <button className="btn btn-tertiary-fill">Try Mythography</button>
+                        <button className="btn btn-tertiary-outline">Contact Us</button>
+                    </div>
+                </div>
+                <div className="flex justify-center gap-12 flex-wrap items-center w-[100%]">
                     <HeroProductCard title={products[0].title} description={products[0].description}
                                      logo={products[0].logo}></HeroProductCard>
                     <HeroProductCard title={products[1].title} description={products[1].description}
                                      logo={products[1].logo}></HeroProductCard>
-                </div>
-            </div>
-            <div className="flex flex-col gap-8 items-center text-center">
-                <div className="flex flex-col items-center text-center">
-                    <Image src="/logos/mythography/mythography.svg" alt="" width="140" height="140"></Image>
-                    <h1 className="m-text-xxxl text-black m-text-bold serif">Mythography</h1>
-                    <h1 className="m-text-lg">Application Support Suite</h1>
-                </div>
-                <div className="h-0.5 w-[100%] bg-gray-200"></div>
-                <p>Giant Solutions to complex problems. The Mythography Application Support Suite provides a modular
-                    set of tools that will allow your application to perform at 100% of its potential</p>
-                <div className="flex gap-8 items-center">
-                    <button className="btn btn-tertiary-fill">Try Mythography</button>
-                    <button className="btn btn-tertiary-outline">Contact Us</button>
-                </div>
-            </div>
-            <div className="flex justify-around items-center w-[100%]">
-                <div className="flex flex-col gap-32">
                     <HeroProductCard title={products[2].title} description={products[2].description}
                                      logo={products[2].logo}></HeroProductCard>
                     <HeroProductCard title={products[3].title} description={products[3].description}
@@ -50,6 +75,7 @@ const Hero = () => {
                 </div>
             </div>
         </div>
+
 
     );
 };
