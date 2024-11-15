@@ -32,9 +32,6 @@ export function Integration() {
                 </div>
               ))}
             </div>
-            <div className="mt-12 text-center">
-              <Button size="lg">View All Integrations</Button>
-            </div>
           </Card>
         </div>
       </div>

@@ -5,6 +5,8 @@ import { Features } from "@/components/features"
 import { Integration } from "@/components/integration"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import {Pricing} from "@/components/pricing";
+import {Testimonials} from "@/components/testimonials";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
         <Products />
         <Features />
         <Integration />
+        <Pricing />
+        <Testimonials />
         <Contact />
       </main>
       <Footer />

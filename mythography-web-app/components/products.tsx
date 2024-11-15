@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Eye, Shield, Activity, Lock } from "lucide-react"
 import { cn } from "@/lib/utils"
+import Link from "next/link";
 
 const products = [
   {
@@ -12,7 +13,8 @@ const products = [
     description: "Keep a vigilant eye on your systems with our advanced monitoring solution. Like its mythological namesake, Argus watches your applications with unwavering attention.",
     icon: Eye,
     color: "text-blue-500",
-    features: ["Real-time monitoring", "Custom alert systems", "Performance metrics", "System health checks"]
+    features: ["Real-time monitoring", "Custom alert systems", "Performance metrics", "System health checks"],
+      link: ""
   },
   {
     name: "Balor",
@@ -83,7 +85,9 @@ export function Products() {
                     </li>
                   ))}
                 </ul>
-                <Button className="mt-8">Learn More</Button>
+                <Link  href={`/products/${activeProduct.name.toLowerCase()}`}>
+                  <Button className="mt-8">Learn More</Button>
+                </Link>
               </div>
             </div>
           </Card>

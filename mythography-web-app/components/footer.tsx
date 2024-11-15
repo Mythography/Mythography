@@ -13,7 +13,9 @@ export function Footer() {
               Empowering developers with mythological strength
             </p>
           </div>
-          
+
+
+            { /* TODO: Hook up email subscription */ }
           <div>
             <h3 className="text-sm font-semibold mb-4">Stay Updated</h3>
             <div className="flex gap-x-3">
@@ -35,7 +37,7 @@ export function Footer() {
                 {["Argus", "Balor", "Briareus", "Fafnir"].map((product) => (
                   <li key={product}>
                     <Link
-                      href={`#${product.toLowerCase()}`}
+                      href={`/products/${product.toLowerCase()}`}
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
                       {product}
@@ -48,7 +50,7 @@ export function Footer() {
             <div>
               <h3 className="text-sm font-semibold">Company</h3>
               <ul className="mt-4 space-y-2">
-                {["About", "Blog", "Careers", "Contact"].map((item) => (
+                {["About", "Blog", "Contact"].map((item) => (
                   <li key={item}>
                     <Link
                       href={`#${item.toLowerCase()}`}

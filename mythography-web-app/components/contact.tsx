@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card } from "@/components/ui/card"
-import { Mail, MessageSquare, Phone } from "lucide-react"
+import { Mail, LinkedinIcon } from "lucide-react"
 
 export function Contact() {
   return (
@@ -20,6 +20,7 @@ export function Contact() {
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
+            { /* TODO: Hook up form to email to mythography */ }
           <Card className="p-8">
             <form className="space-y-6">
               <div className="space-y-2">
@@ -47,8 +48,8 @@ export function Contact() {
                   <p className="mt-1 text-muted-foreground">
                     Our friendly team is here to help
                   </p>
-                  <a href="mailto:hello@mythography.dev" className="mt-2 inline-block text-primary hover:underline">
-                    hello@mythography.dev
+                  <a href="mailto:mythographydevelopment@gmail.com" className="mt-2 inline-block text-primary hover:underline">
+                    mythographydevelopment@gmail.com
                   </a>
                 </div>
               </div>
@@ -56,30 +57,17 @@ export function Contact() {
 
             <Card className="p-6">
               <div className="flex items-start">
-                <MessageSquare className="h-6 w-6 mr-4" />
+                <LinkedinIcon className="h-6 w-6 mr-4" />
                 <div>
-                  <h3 className="text-lg font-semibold">Live Chat</h3>
+                  <h3 className="text-lg font-semibold">LinkedIn</h3>
                   <p className="mt-1 text-muted-foreground">
-                    Available 24/7 for urgent support
+                    Get Mythography updates in your feed
                   </p>
-                  <Button variant="link" className="mt-2 p-0">
-                    Start a conversation
-                  </Button>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-6">
-              <div className="flex items-start">
-                <Phone className="h-6 w-6 mr-4" />
-                <div>
-                  <h3 className="text-lg font-semibold">Phone</h3>
-                  <p className="mt-1 text-muted-foreground">
-                    Mon-Fri from 8am to 5pm
-                  </p>
-                  <a href="tel:+1234567890" className="mt-2 inline-block text-primary hover:underline">
-                    +1 (234) 567-890
-                  </a>
+                    <a href="https://www.linkedin.com/company/mythography" target="_blank" rel="noopener noreferrer">
+                      <Button variant="link" className="mt-2 p-0">
+                        Follow us
+                      </Button>
+                    </a>
                 </div>
               </div>
             </Card>
