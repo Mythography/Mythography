@@ -15,6 +15,9 @@ Welcome to **Mythography**, a suite of powerful, mythology-inspired application 
 
 4. **Briareus (UX Heatmapping and Interaction Analytics)**
    - **Description**: Briareus provides detailed insights into user interactions through heatmaps and session replays, helping you enhance UI/UX design.
+  
+5. **Atlas (Web3-powered Authentication)**
+   - **Description**: Atlas is a Web3-powered authentication library that puts identity control back in users' hands. Secure, decentralized, and privacy-focused.
 
 ## Contact Us
 
