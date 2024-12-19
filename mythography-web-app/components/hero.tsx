@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Eye, Shield, Activity, Lock } from "lucide-react"
+import { Eye, Shield, Activity, Lock, Key } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export function Hero() {
@@ -25,7 +25,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
           {[
             {
               name: "Argus",
@@ -50,6 +50,12 @@ export function Hero() {
               description: "Transformative data encryption security",
               icon: Lock,
               color: "text-red-500"
+            },
+            {
+                name: "Atlas",
+                description: "Web3-powered decentralized authentication",
+                icon: Key,
+                color: "text-yellow-500"
             }
           ].map((feature) => (
             <div

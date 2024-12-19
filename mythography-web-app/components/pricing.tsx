@@ -57,12 +57,25 @@ const individualPlans = [
             "Audit logging",
             "Key management"
         ]
+    },
+    {
+        name: "Atlas",
+        price: 79,
+        description: "Web3-powered decentralized authentication",
+        features: [
+            "Web3 authentication",
+            "Identity verification",
+            "Zero-knowledge proofs",
+            "Biometric integration",
+            "OAuth compatibility",
+            "Developer API access"
+        ]
     }
 ]
 
 export function Pricing() {
     const totalIndividualPrice = individualPlans.reduce((acc, plan) => acc + plan.price, 0)
-    const bundlePrice = 149
+    const bundlePrice = 199
     const savings = totalIndividualPrice - bundlePrice
 
     return (
@@ -87,7 +100,7 @@ export function Pricing() {
                             <div>
                                 <h3 className="text-2xl font-bold">Mythography Complete Suite</h3>
                                 <p className="mt-2 text-muted-foreground">
-                                    Unlock the full power of all four mythological tools
+                                    Unlock the full power of all five mythological tools
                                 </p>
                                 <div className="mt-6">
                                     <div className="flex items-baseline gap-2">
@@ -128,7 +141,7 @@ export function Pricing() {
                 </div>
 
                 {/* Individual Plans */}
-                <div className="mt-16 grid gap-8 lg:grid-cols-2 xl:grid-cols-4">
+                <div className="mt-16 grid gap-8 lg:grid-cols-2 xl:grid-cols-3">
                     {individualPlans.map((plan) => (
                         <Card key={plan.name} className="p-6">
                             <h3 className="text-xl font-bold">{plan.name}</h3>

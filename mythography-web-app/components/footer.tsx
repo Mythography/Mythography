@@ -34,7 +34,7 @@ export function Footer() {
             <div>
               <h3 className="text-sm font-semibold">Products</h3>
               <ul className="mt-4 space-y-2">
-                {["Argus", "Balor", "Briareus", "Fafnir"].map((product) => (
+                {["Argus", "Balor", "Briareus", "Fafnir", "Atlas"].map((product) => (
                   <li key={product}>
                     <Link
                       href={`/products/${product.toLowerCase()}`}

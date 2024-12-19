@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Eye, Shield, Activity, Lock } from "lucide-react"
+import { Eye, Shield, Activity, Lock, Key } from "lucide-react"
 import { cn } from "@/lib/utils"
 import Link from "next/link";
 
@@ -14,7 +14,6 @@ const products = [
     icon: Eye,
     color: "text-blue-500",
     features: ["Real-time monitoring", "Custom alert systems", "Performance metrics", "System health checks"],
-      link: ""
   },
   {
     name: "Balor",
@@ -36,6 +35,13 @@ const products = [
     icon: Lock,
     color: "text-red-500",
     features: ["Data encryption", "Access control", "Secure storage", "Compliance management"]
+  },
+  {
+    name: "Atlas",
+    description: "Secure authentication powered by Web3 technology. Like the titan who held up the sky, Atlas shoulders the responsibility of protecting user identities.",
+    icon: Key,
+    color: "text-yellow-500",
+    features: ["Web3 authentication", "Identity verification", "Zero-knowledge proofs", "Biometric integration"]
   }
 ]
 
